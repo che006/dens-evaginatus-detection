@@ -8,8 +8,6 @@ from simpleCNN import SimpleCNN, SimpleCNN_classification
 import numpy as np
 import sys
 
-
-
 def bgr_to_hex(bgr):
     return '#{:02x}{:02x}{:02x}'.format(int(bgr[2]), int(bgr[1]), int(bgr[0]))
 
@@ -204,7 +202,6 @@ run_cnn_button.pack(side=tk.LEFT, padx=5)
 detect_abnormal_apex_button = tk.Button(frame1, text="Central Cusp Deformity", command=detect_abnormal_apex_button_callback)
 detect_abnormal_apex_button.pack(side=tk.LEFT, padx=5)
 
-# 在顶部4个按钮的右边增加4个按钮
 height_plus_button = tk.Button(frame1, text="height+", command=height_plus_button_callback)
 height_plus_button.pack(side=tk.LEFT, padx=5)
 height_minus_button = tk.Button(frame1, text="height-", command=height_minus_button_callback)
